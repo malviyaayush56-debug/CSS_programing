@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scale</title>
+  <style>
+    .box{
+        height: 50px;
+        width: 50px;
+        border: 2px solid black;
+        border-radius: 5px;
+        position: relative;
+        background-color: plum;
+        top: 50px;
+        left: 50px;
+        transition: all 0.5s ease-in;
+    }
+    .box:hover{
+        transform: scale(2);
+    }
+    #box1{
+      margin: 100px;
+        height: 50px;
+        width: 50px;
+        border: 2px solid black;
+        border-radius: 5px;
+        position: relative;
+        top: 50px;
+        left: 50px;
+        transition: all 0.5s ease-in;
+        background-color: aqua;
+    
+    }
+    #box1:hover{
+          transform: translate(50px,50px) ;
+    }
+    #box2{
+height: 50px;
+        width: 50px;
+        border: 2px solid black;
+        border-radius: 5px;
+        position: relative;
+        top: 50px;
+        left: 50px;
+        background-color: burlywood;
+    
+    }
+    #box2:hover{
+        transform: skew(45deg);
+    }
+  </style>
+</head>
+<body>
+    <div class="box">Scale</div>
+    <div id="box1" >translate</div>
+    <div id="box2">skew</div>
+</body>
+</html>
